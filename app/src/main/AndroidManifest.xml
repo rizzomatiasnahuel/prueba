@@ -16,6 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".RegistroUsuariosActivity" />
+        <activity android:name=".ConsultarUsuariosActivity" />
+        <activity android:name=".ConsultaComboActivity" />
+        <activity android:name=".ConsultarListaListViewActivity" />
+        <activity android:name=".DetalleUsuarioActivity" />
+        <activity android:name=".RegistroMascotaActivity" />
+        <activity android:name=".ListaMascotasActivity" />
+        <activity android:name=".DetalleMascotaActivity" />
+        <activity android:name=".ListaPersonasRecycler"></activity>
+
+
     </application>
 
 </manifest>

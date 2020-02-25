@@ -1,50 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/registrar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnOpcionRegistro"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="136dp"
-        android:text="@string/registrar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Registrar Usuarios"
+        android:onClick="onClick"/>
 
     <Button
-        android:id="@+id/consultar"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnRegistroMascota"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/consultar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/registrar" />
+        android:text="Registrar Mascota"
+        android:onClick="onClick"/>
 
     <Button
-        android:id="@+id/listadeusuarios"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnConsultaIndividual"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:text="@string/lista_de_usuarios"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/consultar" />
+        android:text="Consultar Usuario"
+        android:onClick="onClick"/>
 
     <Button
-        android:id="@+id/listadeusuarios2"
-        android:layout_width="wrap_content"
+        android:id="@+id/btnConsultaSpinner"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="96dp"
-        android:text="@string/lista_de_usuarios2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/consultar" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:text="Consultar Lista Usuario Usando Spinner"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnConsultaLista"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Lista Usuario Usando ListView"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnConsultaListaMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Lista Mascotas"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnConsultaListaPersonasRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Consultar Lista Usando Recycler"
+        android:onClick="onClick"/>
+
+
+</LinearLayout>

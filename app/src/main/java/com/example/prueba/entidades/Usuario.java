@@ -2,7 +2,9 @@
 
 package com.example.prueba.entidades;
 
-public class Usuario {
+import java.io.Serializable;
+
+public class Usuario implements Serializable {
 
        private Integer id;
        private String  nombre;
@@ -17,6 +19,10 @@ public class Usuario {
 
 
     }
+    public Usuario(){
+
+    }
+
 
     public Integer getId() {
         return id;
