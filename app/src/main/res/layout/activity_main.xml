@@ -12,49 +12,49 @@
         android:id="@+id/btnOpcionRegistro"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar Usuarios"
+        android:text="@string/registrar_usuarios"
         android:onClick="onClick"/>
 
     <Button
         android:id="@+id/btnRegistroMascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Registrar Mascota"
+        android:text="@string/registrar_mascota"
         android:onClick="onClick"/>
 
     <Button
         android:id="@+id/btnConsultaIndividual"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Consultar Usuario"
+        android:text="@string/consultar_usuario"
         android:onClick="onClick"/>
 
     <Button
         android:id="@+id/btnConsultaSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Consultar Lista Usuario Usando Spinner"
+        android:text="@string/consultar_lista_usuario_usando_spinner"
         android:onClick="onClick"/>
 
     <Button
         android:id="@+id/btnConsultaLista"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Consultar Lista Usuario Usando ListView"
+        android:text="@string/consultar_lista_usuario_usando_listview"
         android:onClick="onClick"/>
 
     <Button
         android:id="@+id/btnConsultaListaMascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Consultar Lista Mascotas"
+        android:text="@string/consultar_lista_mascotas"
         android:onClick="onClick"/>
 
     <Button
         android:id="@+id/btnConsultaListaPersonasRecycler"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Consultar Lista Usando Recycler"
+        android:text="@string/consultar_lista_usando_recycler"
         android:onClick="onClick"/>
 
 

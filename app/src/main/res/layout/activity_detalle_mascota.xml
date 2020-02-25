@@ -4,18 +4,15 @@
     android:id="@+id/activity_detalle_mascota"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+
     android:orientation="vertical"
-    tools:context="co.quindio.sena.ejemplosqlite.DetalleMascotaActivity">
+    tools:context=".DetalleMascotaActivity">
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INFORMACION MASCOTA"
+        android:text="@string/informacion_mascota"
         android:layout_marginBottom="10dp"
         android:textStyle="bold"
         android:textSize="18sp"/>
@@ -23,7 +20,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="id mascota"
+        android:text="@string/id_mascota"
         android:textStyle="bold"
         android:textSize="18sp"/>
 
@@ -32,13 +29,13 @@
         android:id="@+id/campoIdMascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1094"
+        android:text="@string/_1094"
         android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Nombre Mascota"
+        android:text="@string/nombre_mascota"
         android:textStyle="bold"
         android:textSize="18sp"/>
 
@@ -46,13 +43,13 @@
         android:id="@+id/campoNombreMascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cristian David Henao"
+        android:text="@string/cristian_david_henao"
         android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Raza"
+        android:text="@string/raza"
         android:textStyle="bold"
         android:textSize="18sp"/>
 
@@ -61,7 +58,7 @@
         android:id="@+id/campoRaza"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="75845682"
+        android:text="@string/_75845682"
         android:layout_marginBottom="10dp"/>
 
 
@@ -69,7 +66,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="INFORMACION DUEÑO"
+        android:text="@string/informacion_due_o"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="10dp"
         android:textStyle="bold"
@@ -78,7 +75,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="id"
+        android:text="@string/id"
         android:textStyle="bold"
         android:textSize="18sp"/>
 
@@ -87,13 +84,13 @@
         android:id="@+id/campoId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="1094"
+        android:text="@string/_1094"
         android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="nombre"
+        android:text="@string/nombre"
         android:textStyle="bold"
         android:textSize="18sp"/>
 
@@ -101,13 +98,13 @@
         android:id="@+id/campoNombre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Cristian David Henao"
+        android:text="@string/cristian_david_henao"
         android:layout_marginBottom="10dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="telefono"
+        android:text="@string/telefono"
         android:textStyle="bold"
         android:textSize="18sp"/>
 
@@ -116,7 +113,7 @@
         android:id="@+id/campoTelefono"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="75845682"
+        android:text="@string/_75845682"
         android:layout_marginBottom="10dp"/>
 
 

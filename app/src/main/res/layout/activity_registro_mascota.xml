@@ -1,52 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_registro_usuarios"
+    android:id="@+id/activity_registro_mascota"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     android:orientation="vertical"
-    tools:context=".RegistroUsuariosActivity">
+    tools:context=".RegistroMascotaActivity">
 
     <TextView
-        android:id="@+id/registro_de_usuarios"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="30dp"
-        android:text="@string/registro_de_usuarios"
+        android:text="@string/registro_de_mascotas"
         android:textSize="25sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
 
     <EditText
-        android:id="@+id/campoId"
+        android:id="@+id/campoNombreMascota"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/id"
+        android:hint="@string/nombre_mascota"
         android:importantForAutofill="no"
         android:inputType="text" />
 
     <EditText
-        android:id="@+id/campoNombre"
+        android:id="@+id/campoRaza"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/nombre"
-        android:importantForAutofill="no"
-        android:inputType="text" />
-
-    <EditText
-        android:id="@+id/campoTelefono"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/telefono"
+        android:hint="@string/raza_mascota"
         android:inputType="text"
         android:importantForAutofill="no" />
 
-    <Button
-        android:id="@+id/btnRegistro"
+    <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/registrar_usuario"
+        android:text="@string/due_o"
+        android:textSize="20sp"/>
+
+    <Spinner
+        android:id="@+id/comboDuenioMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnRegistroMascota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/registrar_mascota"
         android:layout_marginTop="30dp"
         android:onClick="onClick"/>
+
 
 </LinearLayout>

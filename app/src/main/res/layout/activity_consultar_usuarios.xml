@@ -16,17 +16,19 @@
 
         <EditText
             android:id="@+id/documentoId"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="Documento"
-            android:layout_weight="0.93" />
+            android:hint="@string/documento"
+            android:layout_weight="0.93"
+            android:inputType="text"
+            android:importantForAutofill="no" />
 
         <Button
             android:id="@+id/btnConsultar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:text="Buscar"
+            android:layout_marginStart="10dp"
+            android:text="@string/buscar"
             android:onClick="onClick"/>
 
 
@@ -36,13 +38,17 @@
         android:id="@+id/campoNombreConsulta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Nombre"/>
+        android:hint="@string/nombre"
+        android:inputType="text"
+        android:importantForAutofill="no" />
 
     <EditText
         android:id="@+id/campoTelefonoConsulta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Telefono"/>
+        android:hint="@string/telefono"
+        android:importantForAutofill="no"
+        android:inputType="text" />
 
     <LinearLayout
         android:layout_marginTop="30dp"
@@ -55,17 +61,19 @@
             android:id="@+id/btnActualizar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Actualizar"
+            android:text="@string/actualizar"
             android:layout_weight="0.5"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            style="?android:attr/borderlessButtonStyle"/>
 
         <Button
             android:id="@+id/btnEliminar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Eliminar"
+            android:text="@string/eliminar"
             android:layout_weight="0.5"
-            android:onClick="onClick"/>
+            android:onClick="onClick"
+            style="?android:attr/borderlessButtonStyle"/>
 
     </LinearLayout>
 
