@@ -4,25 +4,37 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-public class SQLHerlper extends SQLiteOpenHelper {
+import androidx.annotation.Nullable;
 
-        public  SQLHerlper(Context context, String name, SQLiteOpenHelper.CursorFactory  factory, int version){
-            super(context, name, version);
+public class SQLHelper extends SQLiteOpenHelper {
+
+    final String CREAR_TABLA_USUARIO="CREATE TABLE usuarios (id integer , nombre text,telefono text )";
+
+
+
+
+    public SQLHelper( Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+        super(context, name, factory, version);
+    }
+
+    @Override
+    public  void onCreate (SQLiteDatabase db){
+
+            db.execSQL(CREAR_TABLA_USUARIO);
 
 
         }
+
     @Override
-    public  void onCreate (SQLiteDatabase sqLiteDatabase){
+    public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
 
-
-        }
-    @Override
-    public  void onUpgrade (SQLiteDatabase sqLiteDatabase, Int versionAntigua, int il){
-
-
+        db.execSQL("DROP TABLE IF EXISTS usuarios");
+        onCreate(db);
 
     }
+
+
 
 
 }
