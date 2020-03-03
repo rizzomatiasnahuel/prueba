@@ -73,15 +73,10 @@ public class RegistroMascotaActivity extends AppCompatActivity {
         values.put(Utilidades.CAMPO_RAZA_MASCOTA,razaMascota.getText().toString());
 
         int idCombo= (int) comboDuenio.getSelectedItemId();
-        /**
-         * Valida la seleccion del combo de dueños, si el usuario elige "seleccione" entonces
-         * se retorna el id 0 ya que la palabra "seleccione" se encuentra en la pos 0 del combo,
-         * sinó entonces se retorna la posicion del combo para consultar el usuario almacenado en la lista
-         */
         if (idCombo!=0){
             Log.i("TAMAÑO",personasList.size()+"");
             Log.i("id combo",idCombo+"");
-            Log.i("id combo - 1",(idCombo-1)+"");//se resta 1 ya que se quiere obtener la posicion de la lista, no del combo
+            Log.i("id combo - 1",(idCombo-1)+"");
             int idDuenio=personasList.get(idCombo-1).getId();
             Log.i("id DUEÑO",idDuenio+"");
 

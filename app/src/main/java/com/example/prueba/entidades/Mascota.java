@@ -1,9 +1,6 @@
 package com.example.prueba.entidades;
 import java.io.Serializable;
 
-/**
- * Created by CHENAO on 17/06/2017.
- */
 
 public class Mascota implements Serializable {
 

@@ -7,9 +7,6 @@ import android.database.sqlite.SQLiteOpenHelper;
 import com.example.prueba.Utilidades.Utilidades;
 
 
-/**
- * Created by CHENAO on 7/05/2017.
- */
 
 public class ConexionSQLiteHelper extends SQLiteOpenHelper {
 
